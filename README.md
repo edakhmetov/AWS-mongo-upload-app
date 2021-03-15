@@ -1,0 +1,1 @@
+Simple NodeJS app to upload audio files to the AWS S3 storage and reference them in the MongoDB database

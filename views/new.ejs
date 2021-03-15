@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="icon" href="data:,">
+    <title>yukia audio uploads</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <h1 class="text-center display-4 my-4">SELECT MP3 OR M4A AUDIO FILE TO UPLOAD TO THE SERVER</h1>
+                <form action="/new/upload" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file mb-3 information">
+                        <div><input type="file" name="file" id="file" class="custom-file-input"></div>
+                        <input type="text" name="name" id="name" class="custom-file-input" placeholder="name">
+                        <input type="text" name="bpm" id="bpm" class="custom-file-input" placeholder="bpm">
+                        <input type="text" name="duration" id="duration" class="custom-file-input" placeholder="duration">
+                        <!-- <input type="text" name="tags" id="tags" class="custom-file-input" placeholder="tags"> -->
+                        <!-- <button class="btn btn-sm btn-outline-primary"> add a tag</button> -->
+                    </div>
+                    <div class="d-grid gap-2">
+                        <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    <!-- <script>
+        const btn = document.querySelector('button.btn-sm');
+        const info = document.querySelector(".information");
+
+        btn.addEventListener('click', function() {
+            const input = document.createElement('input');
+            input.type = "text";
+            input.name = "tag";
+            input.id = "tag";
+            input.class = "custom-file-input";
+            input.placeholde = "tag";
+            info.appendChild(input);
+        });
+    </script> -->
+</body>
+
+</html>

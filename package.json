@@ -1,0 +1,21 @@
+{
+  "name": "awsuploadengine",
+  "version": "1.0.0",
+  "description": "audio upload engine to AWS S3 storage",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "edd",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.821.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.10",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.2"
+  }
+}
