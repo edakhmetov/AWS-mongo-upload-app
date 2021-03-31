@@ -1,7 +1,7 @@
 Simple NodeJS app to upload audio files to the AWS S3 storage and reference them in the MongoDB database
 
-You need to create a ".env" file in the root folder with these lines and update it with your information:\
+Create .env in the root folder with the following information that you get from AWS and MongoDB:\
 AWS_ID=""\
 AWS_SECRET=""\
 AWS_BUCKET_NAME=""\
-MONGO_URI=""\
+MONGO_URI=""
